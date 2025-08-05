@@ -1,0 +1,127 @@
+/* Selector + propiedad + valor
+
+selector {
+propiedad: valor
+}
+
+el punto (.) llama a las clases
+el # es para los id unicos
+:: (Pseudo-elementos)
+Se usan para crear o estilizar partes de un elemento que no existen en el HTML.
+
+
+
+Siempre es mejor usar las clases para el estetico y los id para la logica.
+
+Las clases son reutilizables, los ID son unicos
+
+
+REM toma el valor predefinido del navegador
+EM toma el valor de su padre (valor de herencia)
+
+Atajos si quiero hacer por ejemplo 3 divs que tenga la clase caja es:
+div.caja*3
+
+Flexbox:
+La propiedad display: flex define un contenedor como un flex container y habilita el uso de todas las propiedades Flexbox en sus elementos hijos.
+La propiedad flex-direction especifica la dirección en la que los elementos flexibles (flex items) se colocan dentro del contenedor.
+    row (valor por defecto): Los elementos se colocan en una fila horizontal.
+    row-reverse: Los elementos se colocan en una fila horizontal en orden inverso.
+    column: Los elementos se colocan en una columna vertical.
+    column-reverse: Los elementos se colocan en una columna vertical en orden inverso.
+La propiedad flex-wrap especifica si los elementos flexibles deben ajustarse en una sola línea o pueden envolverse en múltiples líneas.
+    nowrap (valor por defecto): Todos los elementos se colocan en una sola línea.
+    wrap: Los elementos se envuelven en múltiples líneas según sea necesario.
+    wrap-reverse: Los elementos se envuelven en múltiples líneas en orden inverso.
+
+La propiedad flex-flow es una forma abreviada de establecer tanto flex-direction como flex-wrap.
+La propiedad justify-content alinea los elementos flexibles a lo largo del eje principal del contenedor (horizontalmente en una fila, verticalmente en una columna).
+    flex-start (valor por defecto): Los elementos se alinean al inicio del contenedor.
+    flex-end: Los elementos se alinean al final del contenedor.
+    center: Los elementos se centran en el contenedor.
+    space-between: Los elementos se distribuyen uniformemente con el primer elemento al inicio y el último al final.
+    space-around: Los elementos se distribuyen uniformemente con espacio igual alrededor de cada uno.
+    space-evenly: Los elementos se distribuyen con espacio igual entre ellos.
+La propiedad align-items alinea los elementos flexibles a lo largo del eje transversal (perpendicular al eje principal) del contenedor.
+    stretch (valor por defecto): Los elementos se estiran para llenar el contenedor.
+    flex-start: Los elementos se alinean al inicio del contenedor.
+    flex-end: Los elementos se alinean al final del contenedor.
+    center: Los elementos se centran en el contenedor.
+    baseline: Los elementos se alinean a lo largo de su línea base.
+La propiedad align-content alinea las líneas del contenedor flexible cuando hay espacio extra en el eje transversal.    
+    stretch (valor por defecto): Las líneas se estiran para ocupar el espacio disponible.
+    flex-start: Las líneas se alinean al inicio del contenedor.
+    flex-end: Las líneas se alinean al final del contenedor.
+    center: Las líneas se centran en el contenedor.
+    space-between: Las líneas se distribuyen uniformemente con el primer línea al inicio y la última al final.
+    space-around: Las líneas se distribuyen uniformemente con espacio igual alrededor de cada una.
+    space-evenly: Las líneas se distribuyen con espacio igual entre ellas.
+La propiedad order determina el orden en que se muestran los ítems flexibles dentro del contenedor flex. Por defecto, todos los ítems tienen un valor order de 0.
+Se utiliza para cambiar el orden de los ítems sin alterar el orden en el HTML.
+La propiedad flex-shrink determina la capacidad de un ítem flexible para reducir su tamaño si es necesario. El valor por defecto es 1 (puede encogerse).
+La propiedad flex-grow define la capacidad de un ítem flexible para crecer en proporción a los demás ítems flexibles dentro del mismo contenedor. El valor por defecto es 0 (no crece).
+    
+
+flex-grow nos permite cambiar el ancho de las cajas de manera flexible
+    display flex: activa flexbox
+    justify-content trabaja horizontal mientras que align-items funciona vertical
+    flex-direction 
+
+
+Estilos para dispositivos móviles 
+body {
+    font-size: 16px;
+    padding: 10px;
+}
+Media query para tabletas 
+@media (min-width: 600px) {
+    body {
+        font-size: 18px;
+        padding: 20px;
+    }
+}
+Media query para computadoras de escritorio 
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+        padding: 30px;
+    }
+}
+*/
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.log {
+    align-items: self-start;
+}
+
+.principal {
+    position:relative;
+
+}
+
+.principal2 {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+#index {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+    
+}
+
+h1 {
+
+    text-align: center;
+
+}
+
