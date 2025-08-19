@@ -89,39 +89,80 @@ Media query para computadoras de escritorio
 }
 */
 
-.nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
+body {
 
-.log {
-    align-items: self-start;
-}
-
-.principal {
-    position:relative;
+font-family: 'Open Sans', sans-serif;
+background-color: #fffaf6;
+color: #333;
+margin: 0;
 
 }
 
-.principal2 {
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 18px;
-}
-#index {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 10%;
-    
-}
-
-h1 {
-
+header {
+    background: linear-gradient(90deg, #ffcad4, #cde7ff);
+    padding: 1rem;
     text-align: center;
-
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color: #fff;
+    display: flex;
 }
 
+/* ESTILOS PARA EL NAV*/
+nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 0.5rem 0.75rem;
+  display: inline-block;
+}
+
+/* ESTILOS PARA EL LOGO*/
+.log img {
+  width: 20vw;        
+  max-width: 180px;   
+  height: auto;
+  padding: 0.5rem;
+}
+
+.section {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+/*ESTILOS PARA LAS CARDS*/
+.card{
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/*ESTILOS DE LOS BOTONES*/
+.button {
+    background-color: #ffcad4;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border: radius 25px;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #ff9bb0;
+    color: white;
+}
