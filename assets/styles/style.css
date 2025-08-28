@@ -89,35 +89,57 @@ Media query para computadoras de escritorio
 }
 */
 
+
+
 body {
-
-font-family: 'Open Sans', sans-serif;
-background-color: #fffaf6;
-color: #333;
 margin: 0;
-
 }
 
 header {
-    background: linear-gradient(90deg, #ffcad4, #e5f9d0);
+
     padding: 0.5rem;
-    font-family: 'Pacifico', cursive;
+    font-family: Jost, sans-serif;
     font-size: 1rem;
-    color: #fff;
+    color: #D9BA5F;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-main {
-    /*text-align: center;*/
-    font-family: 'Pacifico', cursive;
-    font-size: 2rem;
-    color: #612f2f;
-    /*display: flex;*/
+.main {
+  font-family: Jost, sans-serif;
+  font-size: 2rem;
+  color: #612f2f;
+  display: flex;
+  flex-direction: column; /* Apila los <section> uno abajo del otro */
+  align-items: center;    /* Centra horizontalmente */
+  justify-content: center; /* Centra verticalmente si le das altura */
+  text-align: center;     /* Centra el texto dentro de cada section */
+  min-height: 70vh;       /* Ajustá según lo alto que quieras tu main */
+  margin: 0 auto;         /* Evita que se pegue a los lados */
+  padding: 2rem 1rem;     /* Un poco de respiro interno */
 }
 
 
+/*ESTILOS PARA LA IMAGEN DE FONDO*/
+.backgroundMain {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background-size: auto 50%;  /* achica la imagen */
+
+}
+
+.backgroundMain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../img/background_index_tres.png") center/cover no-repeat;
+  opacity: 0.4;
+  z-index: -1;
+  
+  
+}
 
 /* ESTILOS PARA EL NAV*/
 .nav {
@@ -147,9 +169,43 @@ nav a {
   padding: 0.5rem;
 }
 
-.section {
+/*.section {
     padding: 3rem 2rem;
     text-align: center;
+}*/
+
+.destacado{
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 900px;
+}
+
+
+.contenedor_cualidades{
+display: flex;
+justify-content: center;
+gap: 1.5rem;
+flex-wrap: wrap;
+}
+
+.cualidades {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 0.5rem;
+}
+
+.cualidades img{
+    width: 20vw;        
+  max-width: 90px;   
+  height: auto;
+  display: block;
+}
+
+.variedad{
+    display: flex;
+  gap: 0.5rem; /* espacio entre los dos iconos */
+  justify-content: center;
 }
 
 /*ESTILOS PARA LAS CARDS*/
@@ -167,7 +223,7 @@ nav a {
 
 /*ESTILOS DE LOS BOTONES*/
 .button {
-    background-color: #dbffdb;
+    background-color: #F2EAD0;
     border: none;
     padding: 0.5rem 1.5rem;
     border-radius: 20px;
@@ -180,7 +236,7 @@ nav a {
 }
 
 .buttonFOOTER {
-    background-color: #dbffdb;
+    background-color: #F2EAD0;
     border: none;
     padding: 0rem 0.5rem;
     border-radius: 30px;
@@ -192,18 +248,18 @@ nav a {
 }
 
 .button:hover {
-    background-color: #ff9bb0;
+    background-color: #D9C99A;
     color: white;
 }
 
 /*ESTILOS FOOTER*/
 
 footer {
-    background: linear-gradient(90deg, #e5f9d0, #ffcad4);
+    background: linear-gradient(90deg, #D9C99A, #BF8924);
     padding: 2rem;
 
 
-    font-family: 'Pacifico', cursive;
+    font-family: Jost, sans-serif;
     font-size: 1rem;
     color: #612f2f;
     align-items: center;
