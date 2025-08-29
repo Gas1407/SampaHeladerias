@@ -106,7 +106,7 @@ header {
     justify-content: space-between;
 }
 
-.main {
+.main_index {
   font-family: Jost, sans-serif;
   font-size: 2rem;
   color: #612f2f;
@@ -126,7 +126,7 @@ header {
   position: relative;
   min-height: 100vh;
   overflow: hidden;
-  background-size: auto 50%;  /* achica la imagen */
+  background-size: auto 50%;
 
 }
 
@@ -311,4 +311,97 @@ footer {
 
 .copyright {
     text-align: center;
+}
+
+/*ESTILOS PARA LA GALERIA EN NOSOTROS*/
+
+.contenedor_fotos{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 300px;
+  grid-gap: 10px;
+  /*padding: 100px 0;*/
+  padding: 0;
+}
+
+.gallery img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery:nth-child(2){
+  grid-column-start: span 2;
+}
+
+.gallery:nth-child(4){
+  grid-column-start: span 2;
+}
+
+/* Esquina superior izquierda (primera imagen) */
+.gallery:first-child img {
+  border-top-left-radius: 20px;
+}
+
+/* Esquina superior derecha (tercera imagen, si tu grid tiene 3 columnas) */
+.gallery:nth-child(3) img {
+  border-top-right-radius: 20px;
+}
+
+/* Esquina inferior izquierda (la primera de la última fila) */
+.gallery:nth-last-child(3) img {
+  border-bottom-left-radius: 20px;
+}
+
+/* Esquina inferior derecha (última imagen) */
+.gallery:last-child img {
+  border-bottom-right-radius: 20px;
+}
+
+@media(max-width:991px) {
+    .contenedor_fotos {
+      padding: 30px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+.gallery:nth-child(2){
+  grid-column-start: span 1;
+}
+
+.gallery:nth-child(4){
+  grid-column-start: span 1;
+}
+}
+
+.main_nosotros{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  
+}
+
+.main_nosotros section:first-child {
+  flex: 1 1 50%;
+}
+
+.parrafo_nosotros1 {
+  text-align:start;
+        font-family: Jost, sans-serif;
+    font-size: 1.5rem;
+    color: #612f2f;
+    
+
+}
+
+.parrafo_nosotros2 {
+        font-family: Jost, sans-serif;
+    font-size: 1.5rem;
+    color: #612f2f;
+    text-align:start;
 }
