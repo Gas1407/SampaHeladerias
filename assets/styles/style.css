@@ -107,6 +107,8 @@ p {
 
 body {
 margin: 0;
+height: 100%;
+padding: 0 ;
 }
 
 header {
@@ -160,7 +162,7 @@ header {
   min-height: 100vh;
   overflow: hidden;
   background-size: auto 50%;
-
+  
 }
 
 .backgroundMain_EncargaOnline::before {
@@ -168,6 +170,7 @@ header {
   position: absolute;
   inset: 0;
   background: url("../img/encarga-online.jpeg") center/cover no-repeat;
+  
   opacity: 0.4;
   z-index: -1;
   
@@ -517,10 +520,87 @@ margin-left: 300px;
   background-position: 50% 30%;
 }*/
 
-.backgroundEncargaOnline h1 {
+/*.backgroundEncargaOnline h1 {
   color: white;
   font-size: 2rem;
-  background-color: rgba(242, 233, 208, 1); /* opcional, para que el texto resalte */
+  background-color: rgba(242, 233, 208, 1);
   padding: 1rem 2rem;
   border-radius: 10px;
+  text-align: center;
+  margin-left: 5;
+  max-width: 50;
+}*/
+
+.encargaOnline_principal {
+  font-size: 2rem;
+  color: #612f2f;
+  text-align: center;
+  margin-bottom: 15rem;
+  margin-top: 3rem;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem; /* espacio entre categorías */
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 500;
+}
+
+fieldset {
+  background: #fff8f5;
+  border: 2px solid #D9BA5F;
+  border-radius: 15px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+fieldset:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+legend {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #D9BA5F;
+  margin-bottom: 0.5rem;
+}
+
+fieldset div {
+  margin: 0.5rem 0;
+}
+
+input[type="checkbox"] {
+  accent-color: #8C4303;
+  transform: scale(1.2);
+  margin-right: 0.5rem;
+}
+
+label {
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  color: #612f2f;
+}
+
+button {
+  grid-column: span 4;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.1rem;
+  background: #D9BA5F;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background: #8C4303;
 }
