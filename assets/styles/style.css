@@ -226,7 +226,7 @@ flex-wrap: wrap;
 /*ESTILOS PARA LAS CARDS*/
 .card{
     background: #fff;
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 2rem;
     transition: transform 0.3s;
@@ -337,7 +337,7 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 300px;
   grid-gap: 10px;
-  /*padding: 100px 0;*/
+  margin-right: 250px;
   padding: 0;
 }
 
@@ -395,7 +395,7 @@ footer {
   justify-content: space-between;
   align-items: flex-start;
   gap: 3rem;
-  max-width: 1200px;
+  
   margin: 0 auto;
   padding: 2rem;
   
@@ -405,17 +405,29 @@ footer {
   flex: 1 1 50%;
 }
 
+.titulo_main_nosotros {
+  color: #612f2f;
+  font-weight:800;
+}
+
+.contenedor_parrafos{
+max-width: 900px;
+margin-top: 250px;
+margin-left: 300px;
+}
+
 .parrafo_nosotros1 {
   text-align:start;
         font-family: Jost, sans-serif;
-    font-size: 1.5rem;
+    font-size: 3rem;
     color: #612f2f;
-    
+    line-height: 1;
+    max-width: 5;
 
 }
 
 .parrafo_nosotros2 {
-        font-family: Jost, sans-serif;
+    font-family: Jost, sans-serif;
     font-size: 1.5rem;
     color: #612f2f;
     text-align:start;
