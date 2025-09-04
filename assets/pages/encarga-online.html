@@ -6,131 +6,242 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encarga online</title>
     <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="description" content="Sampa Heladerias, helado artesanal con recetas tradicionales, variedad de sabores para todos los gustos, ingredientes naturales y frescos, calidad y sabor inigualables.">
+    <meta name="keywords" content="Sampa Heladerias, helados artesanales, sucursales, sabores unicos, variedad">
+    <meta name="author" content="Gaston Sampataro">
+    <meta name="owner" content="Sampa Heladerias">
+    <link rel="icon" href="../img/logoV.png" type="image/x-icon">
 </head>
 
 <body>
     <div class="backgroundMain_EncargaOnline">
     <header>
-        <div class="log">
-        <a href="../../index.html">
-            <img src="../img/logoV.png" alt="Logo SampaHeladerias">
-        </a>
-        </div>
-        <nav class="nav">
-            <ul>
-                <li class="button">
-                    <a href="./nosotros.html">Nosotros</a>
-                </li>
-                <li class="button">
-                    <a href="./sabores.html">Sabores</a>
-                </li>
-                <li class="button">
-                    <a href="../../index.html">Home</a>
-                </li>
-                <li class="button">
-                    <a href="./encarga-online.html">Encarga Online</a>
-                </li>
-                <li class="button">
-                    <a href="./sucursales.html">Sucursales</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+  <nav class="navbar navbar-expand-lg navbar-transparent">
+    <div class="container">
+
+      
+      <a class="navbar-brand" href="../../index.html">
+        <img src="../img/logoV.png" alt="Logo SampaHeladerias">
+      </a>
+
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link button" href="./nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link button" href="./sabores.html">Sabores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link button" href="../../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link button" href="./encarga-online.html">Encarga Online</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link button" href="./sucursales.html">Sucursales</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
     <main>
         <section class=encargaOnline_principal>
             <h1>Pedinos el sabor que quieras</h1>
             <p>y disfruta del mejor helado</p>
         </section>
   <form>
-    <fieldset>
-        <legend>Sabores al agua</legend>
-                    <div>
-                        <input type="checkbox" id="Limon_alagua" name="al_agua" value="Limon" />
-                        <label for="Limon_alagua">Limon</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="Durazno_alagua" name="al_agua" value="Durazno" />
-                        <label for="Durazno_alagua">Durazno</label>
-                    </div>
-                                        <div>
-                        <input type="checkbox" id="Frutilla_alagua" name="al_agua" value="Frutilla" />
-                        <label for="Frutilla_alagua">Frutilla</label>
-                    </div>
-                                        <div>
-                        <input type="checkbox" id="Frambuesa_alagua" name="al_agua" value="Frambuesa" />
-                        <label for="Frambuesa_alagua">Frambuesa</label>
-                    </div>
-                                        <div>
-                        <input type="checkbox" id="Anana_alagua" name="al_agua" value="Anana" />
-                        <label for="Anana_alagua">Anana</label>
-                    </div>
-                                        <div>
-                        <input type="checkbox" id="Maracuyá_alagua" name="al_agua" value="Maracuyá" />
-                        <label for="Maracuyá_alagua">Maracuyá</label>
-                    </div>
-    </fieldset>
-    <fieldset>
-      <legend>Chocolates</legend>
-      <div>
-        <input type="checkbox" id="choc-tentacion" name="chocolates" value="Tentacion">
-        <label for="choc-tentacion">Tentación</label>
-      </div>
-      <div>
-        <input type="checkbox" id="choc-blanco" name="chocolates" value="Blanco">
-        <label for="choc-blanco">Blanco</label>
-      </div>
-      <div>
-        <input type="checkbox" id="choc-almendra" name="chocolates" value="Con almendras">
-        <label for="choc-almendra">Con almendras</label>
-      </div>
-      <div>
-        <input type="checkbox" id="choc-suizo" name="chocolates" value="Suizo">
-        <label for="choc-suizo">Suizo</label>
-      </div>
-      <div>
-        <input type="checkbox" id="choc-amargo" name="chocolates" value="Amargo">
-        <label for="choc-amargo">Amargo</label>
-      </div>
-    </fieldset>
+  <!-- Sabores al agua -->
+  <fieldset>
+    <legend>Sabores al agua</legend>
+    <div>
+      <input type="checkbox" id="Limon_alagua" name="al_agua" value="Limon" />
+      <label for="Limon_alagua">Limón</label>
+    </div>
+    <div>
+      <input type="checkbox" id="Durazno_alagua" name="al_agua" value="Durazno" />
+      <label for="Durazno_alagua">Durazno</label>
+    </div>
+    <div>
+      <input type="checkbox" id="Frutilla_alagua" name="al_agua" value="Frutilla" />
+      <label for="Frutilla_alagua">Frutilla</label>
+    </div>
+    <div>
+      <input type="checkbox" id="Frambuesa_alagua" name="al_agua" value="Frambuesa" />
+      <label for="Frambuesa_alagua">Frambuesa</label>
+    </div>
+    <div>
+      <input type="checkbox" id="Anana_alagua" name="al_agua" value="Anana" />
+      <label for="Anana_alagua">Ananá</label>
+    </div>
+    <div>
+      <input type="checkbox" id="Maracuyá_alagua" name="al_agua" value="Maracuyá" />
+      <label for="Maracuyá_alagua">Maracuyá</label>
+    </div>
+  </fieldset>
 
-    <fieldset>
-      <legend>Dulce de leche</legend>
-      <div>
-        <input type="checkbox" id="ddl-granizado" name="dulce" value="Granizado">
-        <label for="ddl-granizado">Granizado</label>
-      </div>
-      <div>
-        <input type="checkbox" id="ddl-nuez" name="dulce" value="Con nuez">
-        <label for="ddl-nuez">Con nuez</label>
-      </div>
-      <div>
-        <input type="checkbox" id="ddl-tentacion" name="dulce" value="Tentación">
-        <label for="ddl-tentacion">Tentación</label>
-      </div>
-    </fieldset>
+  <!-- Chocolates -->
+  <fieldset>
+    <legend>Chocolates</legend>
+    <div>
+      <input type="checkbox" id="choc-tentacion" name="chocolates" value="Tentacion">
+      <label for="choc-tentacion">Tentación</label>
+    </div>
+    <div>
+      <input type="checkbox" id="choc-blanco" name="chocolates" value="Blanco">
+      <label for="choc-blanco">Blanco</label>
+    </div>
+    <div>
+      <input type="checkbox" id="choc-almendra" name="chocolates" value="Con almendras">
+      <label for="choc-almendra">Con almendras</label>
+    </div>
+    <div>
+      <input type="checkbox" id="choc-suizo" name="chocolates" value="Suizo">
+      <label for="choc-suizo">Suizo</label>
+    </div>
+    <div>
+      <input type="checkbox" id="choc-amargo" name="chocolates" value="Amargo">
+      <label for="choc-amargo">Amargo</label>
+    </div>
+  </fieldset>
 
-    <fieldset>
-      <legend>Cremas</legend>
-      <div>
-        <input type="checkbox" id="crema-oreo" name="cremas" value="Crema Oreo">
-        <label for="crema-oreo">Crema Oreo</label>
-      </div>
-      <div>
-        <input type="checkbox" id="crema-sambayon" name="cremas" value="Sambayón">
-        <label for="crema-sambayon">Sambayón</label>
-      </div>
-      <div>
-        <input type="checkbox" id="crema-tramontana" name="cremas" value="Tramontana">
-        <label for="crema-tramontana">Tramontana</label>
-      </div>
-      <div>
-        <input type="checkbox" id="crema-tiramisu" name="cremas" value="Tiramisú">
-        <label for="crema-tiramisu">Tiramisú</label>
-      </div>
-    </fieldset>
+  <!-- Dulce de leche -->
+  <fieldset>
+    <legend>Dulce de leche</legend>
+    <div>
+      <input type="checkbox" id="ddl-granizado" name="dulce" value="Granizado">
+      <label for="ddl-granizado">Granizado</label>
+    </div>
+    <div>
+      <input type="checkbox" id="ddl-nuez" name="dulce" value="Con nuez">
+      <label for="ddl-nuez">Con nuez</label>
+    </div>
+    <div>
+      <input type="checkbox" id="ddl-tentacion" name="dulce" value="Tentación">
+      <label for="ddl-tentacion">Tentación</label>
+    </div>
+  </fieldset>
 
-    <button type="submit">Enviar</button>
-  </form>
+  <!-- Cremas -->
+  <fieldset>
+    <legend>Cremas</legend>
+    <div>
+      <input type="checkbox" id="crema-oreo" name="cremas" value="Crema Oreo">
+      <label for="crema-oreo">Crema Oreo</label>
+    </div>
+    <div>
+      <input type="checkbox" id="crema-sambayon" name="cremas" value="Sambayón">
+      <label for="crema-sambayon">Sambayón</label>
+    </div>
+    <div>
+      <input type="checkbox" id="crema-tramontana" name="cremas" value="Tramontana">
+      <label for="crema-tramontana">Tramontana</label>
+    </div>
+    <div>
+      <input type="checkbox" id="crema-tiramisu" name="cremas" value="Tiramisú">
+      <label for="crema-tiramisu">Tiramisú</label>
+    </div>
+  </fieldset>
+
+  <!-- Nuevos fieldsets agregados -->
+
+  <!-- Frutales -->
+  <fieldset>
+    <legend>Frutales</legend>
+    <div>
+      <input type="checkbox" id="frutilla_crema" name="frutales" value="Frutilla a la crema">
+      <label for="frutilla_crema">Frutilla a la crema</label>
+    </div>
+    <div>
+      <input type="checkbox" id="banana_split" name="frutales" value="Banana Split">
+      <label for="banana_split">Banana Split</label>
+    </div>
+    <div>
+      <input type="checkbox" id="maracuya" name="frutales" value="Maracuyá">
+      <label for="maracuya">Maracuyá</label>
+    </div>
+    <div>
+      <input type="checkbox" id="crema_del_cielo" name="frutales" value="Crema del cielo">
+      <label for="crema_del_cielo">Crema del cielo</label>
+    </div>
+  </fieldset>
+
+  <!-- Menta y cítricos -->
+  <fieldset>
+    <legend>Menta y cítricos</legend>
+    <div>
+      <input type="checkbox" id="menta_granizada" name="menta" value="Menta granizada">
+      <label for="menta_granizada">Menta granizada</label>
+    </div>
+    <div>
+      <input type="checkbox" id="limon_crema" name="menta" value="Limón a la crema">
+      <label for="limon_crema">Limón a la crema</label>
+    </div>
+    <div>
+      <input type="checkbox" id="naranja" name="menta" value="Naranja">
+      <label for="naranja">Naranja</label>
+    </div>
+    <div>
+      <input type="checkbox" id="frambuesa_crema" name="menta" value="Frambuesa a la crema">
+      <label for="frambuesa_crema">Frambuesa a la crema</label>
+    </div>
+  </fieldset>
+
+  <!-- Helados especiales -->
+  <fieldset>
+    <legend>Helados especiales</legend>
+    <div>
+      <input type="checkbox" id="tiramisu_chico" name="especiales" value="Tiramisú chico">
+      <label for="tiramisu_chico">Tiramisú chico</label>
+    </div>
+    <div>
+      <input type="checkbox" id="chocolate_blanco" name="especiales" value="Chocolate blanco">
+      <label for="chocolate_blanco">Chocolate blanco</label>
+    </div>
+    <div>
+      <input type="checkbox" id="dulce_de_leche_especial" name="especiales" value="Dulce de leche especial">
+      <label for="dulce_de_leche_especial">Dulce de leche especial</label>
+    </div>
+    <div>
+      <input type="checkbox" id="triple_chocolate" name="especiales" value="Triple chocolate">
+      <label for="triple_chocolate">Triple chocolate</label>
+    </div>
+  </fieldset>
+
+  <!-- Veganos -->
+  <fieldset>
+    <legend>Vegan y light</legend>
+    <div>
+      <input type="checkbox" id="vegano_choco" name="vegan" value="Vegano chocolate">
+      <label for="vegano_choco">Vegano chocolate</label>
+    </div>
+    <div>
+      <input type="checkbox" id="vegano_frutilla" name="vegan" value="Vegano frutilla">
+      <label for="vegano_frutilla">Vegano frutilla</label>
+    </div>
+    <div>
+      <input type="checkbox" id="vegano_mango" name="vegan" value="Vegano mango">
+      <label for="vegano_mango">Vegano mango</label>
+    </div>
+    <div>
+      <input type="checkbox" id="vegano_limon" name="vegan" value="Vegano limón">
+      <label for="vegano_limon">Vegano limón</label>
+    </div>
+  </fieldset>
+
+  <button type="submit">Enviar</button>
+</form>
+
 </section>
 
     </main>

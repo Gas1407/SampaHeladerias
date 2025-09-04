@@ -5,78 +5,216 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sabores</title>
     <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <meta name="description" content="Sampa Heladerias, helado artesanal con recetas tradicionales, variedad de sabores para todos los gustos, ingredientes naturales y frescos, calidad y sabor inigualables.">
+    <meta name="keywords" content="Sampa Heladerias, helados artesanales, sucursales, sabores unicos, variedad">
+    <meta name="author" content="Gaston Sampataro">
+    <meta name="owner" content="Sampa Heladerias">
+    <link rel="icon" href="../img/logoV.png" type="image/x-icon">
+
+
 </head>
 <body>
     <div class="backgroundMain">
-    <header>
-        <div class="log">
-        <a href="../../index.html">
-            <img src="../img/logoV.png" alt="Logo SampaHeladerias">
-        </a>
-        </div>
-        <nav class="nav">
-            <ul>
-                <li class="button">
-                    <a href="./nosotros.html">Nosotros</a>
-                </li>
-                <li class="button">
-                    <a href="./sabores.html">Sabores</a>
-                </li>
-                <li class="button">
-                    <a href="../../index.html">Home</a>
-                </li>
-                <li class="button">
-                    <a href="./encarga-online.html">Encarga Online</a>
-                </li>
-                <li class="button">
-                    <a href="./sucursales.html">Sucursales</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main> 
-        <section class="sabores_principal">
-            <h1>Nuestros sabores</h1>
-            <p>Deleitate con nuestra gran variedad de gustos</p>
-        </section>
-        <section class="contenedor_cards_sucursales">
-            <div class="card_sucursales">
-                <h2>Tramontana</h2>
-                <p>Hecho a base de crema americana, con dulce de leche casero y chips de chocolate</p>
-                <img src="../img/tramontana.jpg">
-            </div>
-            <div class="card">   
-                <h2>Crema Oreo</h2>
-                <p>Crema de leche, helado de crema americana, dulce de leche y oreos</p>
-                <img src="../img/crema oreo.jpg">
-            </div>
-            <div class="card">
-            <h2>Tiramisu</h2>
-            <p>Una combinacion de caafe tostado, queso mascarpone, crema de leche, pasta de vainillas y cacao en polvo</p>
-            <img src="../img/tiramisu.jpg">
-            </div>
-            <div class="card">
-                <h2>Mousse de limon</h2>
-                <p>El mousse mezcla de limon y crema americana, aporta un sabor unico, cremoso y refrescante</p>
-                <img src="../img/mousse de limon.jpg">
-            </div>
-            <div class="card">   
-                <h2>Chocolate tentacion</h2>
-                <p>Contiene cacao puro al 70%, con bombones de chocolate blanco y salsa de chocolate</p>
-                <img src="../img/chocolate tentacion.jpg">
-            </div>
-            <div class="card">
-            <h2>Sambayon</h2>
-            <p>A base de crema y el mejor run de la region, confinamos nuestro exquisito sambayon</p>
-            <img src="../img/sambayon.jpg">
-            </div>
-        </section>
-    </main>
+    
+<header>
+  <nav class="navbar navbar-expand-lg navbar-transparent">
+    <div class="container">
 
-    <aside>
-        <h2>Noticias Helado mundial</h2>
-        <p>Te traemos algunas noticias que generan furor y recorren el planeta entero.</p>
-    </aside>
+      
+      <a class="navbar-brand" href="../../index.html">
+        <img src="../img/logoV.png" alt="Logo SampaHeladerias">
+      </a>
+
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link button" href="./nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link button" href="./sabores.html">Sabores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link button" href="../../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link button" href="./encarga-online.html">Encarga Online</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link button" href="./sucursales.html">Sucursales</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+    <main> 
+
+
+<section class="sabores_principal text-center my-5">
+  <h1>Nuestros sabores</h1>
+  <p>Deleitate con nuestra gran variedad de gustos</p>
+</section>
+
+<div id="carouselSabores" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="../img/tramontana.jpg" class="card-img-top" alt="Tramontana">
+            <div class="card-body">
+              <h5 class="card-title">Tramontana</h5>
+              <p class="card-text">Crema americana, dulce de leche casero y chips de chocolate.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="../img/crema oreo.jpg" class="card-img-top" alt="Crema Oreo">
+            <div class="card-body">
+              <h5 class="card-title">Crema Oreo</h5>
+              <p class="card-text">Crema de leche, americana, dulce de leche y trozos de Oreo.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="../img/tiramisu.jpg" class="card-img-top" alt="Tiramisú">
+            <div class="card-body">
+              <h5 class="card-title">Tiramisú</h5>
+              <p class="card-text">Café tostado, mascarpone, crema de leche, vainillas y cacao.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="../img/mousse de limon.jpg" class="card-img-top" alt="Mousse de Limón">
+            <div class="card-body">
+              <h5 class="card-title">Mousse de Limón</h5>
+              <p class="card-text">Mezcla de limón y crema americana, cremoso y refrescante.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="../img/chocolate tentacion.jpg" class="card-img-top" alt="Chocolate Tentación">
+            <div class="card-body">
+              <h5 class="card-title">Chocolate Tentación</h5>
+              <p class="card-text">Cacao puro al 70%, bombones de chocolate blanco y salsa.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="../img/sambayon.jpg" class="card-img-top" alt="Sambayón">
+            <div class="card-body">
+              <h5 class="card-title">Sambayón</h5>
+              <p class="card-text">A base de crema y el mejor ron de la región.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="../img/frutilla-crema.jpg" class="card-img-top" alt="Frutilla a la crema">
+            <div class="card-body">
+              <h5 class="card-title">Frutilla a la crema</h5>
+              <p class="card-text">Helado cremoso con frutillas naturales frescas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="../img/limon-agua.jpg" class="card-img-top" alt="Limón al agua">
+            <div class="card-body">
+              <h5 class="card-title">Limón al agua</h5>
+              <p class="card-text">Clásico helado al agua, ácido y refrescante, elaborado con jugo natural de limón.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="../img/crema del cielo.jpg" class="card-img-top" alt="Crema del Cielo">
+            <div class="card-body">
+              <h5 class="card-title">Crema del Cielo</h5>
+              <p class="card-text">Suave crema con su característico color celeste y un delicado sabor a vainilla.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="../img/menta-granizada.jpg" class="card-img-top" alt="Menta Granizada">
+            <div class="card-body">
+              <h5 class="card-title">Menta Granizada</h5>
+              <p class="card-text">Refrescante crema de menta con trozos de chocolate.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="../img/bananaSPLIT.jpg" class="card-img-top" alt="Banana Split">
+            <div class="card-body">
+              <h5 class="card-title">Banana Split</h5>
+              <p class="card-text">Cremoso helado de banana con salsa de chocolate y crocantes.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="../img/maracuya.jpeg" class="card-img-top" alt="Maracuyá">
+            <div class="card-body">
+              <h5 class="card-title">Maracuyá</h5>
+              <p class="card-text">Exótico y tropical, con el intenso sabor de la fruta de la pasión.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controles -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselSabores" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselSabores" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+    </main>
     </div>
     <footer>
         <section class="foot">
