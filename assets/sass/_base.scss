@@ -1,0 +1,25 @@
+@use "variables" as var;
+
+// Reset global
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Fuentes
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap');
+
+h1, h2, h3 {
+  font-family: var.$font-titulos;
+}
+
+p, a {
+  font-family: var.$font-texto;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  padding: 0;
+}

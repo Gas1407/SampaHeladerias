@@ -1,0 +1,47 @@
+@use "variables" as var;
+
+.sabores_principal {
+  font-size: 2rem;
+  color: var.$color-principal;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+#carouselSabores .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  margin-top: 10vh;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  img {
+    height: 600px; 
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .card-body {
+    flex-grow: 1;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+    color: #555;
+  }
+}

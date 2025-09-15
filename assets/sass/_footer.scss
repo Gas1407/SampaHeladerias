@@ -1,0 +1,69 @@
+@use "variables" as var;
+
+footer {
+  background: linear-gradient(90deg, var.$color-secundario, var.$color-dorado);
+  padding: 2rem;
+  font-size: 1rem;
+  color: var.$color-principal;
+  width: 100%;
+  text-align: center;
+}
+
+.foot {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.foot ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 0.5rem;
+}
+
+.foot h4 {
+  margin: 0;
+}
+
+.DIVredes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.redes img {
+  width: 10vw;
+  max-width: 30px;
+  height: auto;
+  padding: 0.5rem;
+  align-items: end;
+}
+
+.contacto {
+  display: flex;
+  align-items: center;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.buttonFOOTER {
+  background-color: var.$color-fondo;
+  border: none;
+  padding: 0rem 0.5rem;
+  border-radius: 30px;
+  color: var.$color-principal;
+  font-weight: bold;
+  cursor: pointer;
+  transition: var.$transicion;
+  text-decoration: none;
+
+  &:hover {
+    background-color: var.$color-secundario;
+    color: white;
+  }
+}
