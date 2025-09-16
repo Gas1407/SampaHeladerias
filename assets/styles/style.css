@@ -423,6 +423,7 @@ form {
   gap: 1.5rem;
   max-width: 1200px;
   margin: auto;
+  margin-bottom: 5rem;
 }
 
 fieldset {
@@ -470,7 +471,7 @@ button {
   font-weight: bold;
   cursor: pointer;
   transition: background 0.3s ease;
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 button:hover {
   background: #8C4303;
